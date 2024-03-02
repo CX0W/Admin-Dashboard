@@ -1,0 +1,206 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 220px auto;
+    min-height: 100vh;
+    background-color: #e2e8f0;
+   
+}
+.container{
+    display: grid;
+    grid-template-areas: "banner banner banner"
+                          "project project tab"
+                          "project project tab";
+    gap:1rem;
+    height: 90%;
+}
+.banner{
+    grid-area: banner;
+}
+.Projects{
+    grid-area:project;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    gap:1rem;
+    margin-left:1rem;
+}
+.buttons{
+    display: flex;
+    gap:3rem;
+}
+.Projects>.item{
+    min-height: 10rem;
+
+}
+.dashboard{
+    background-color: #1992d4;
+    color: #fff;
+    flex-direction: column;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    font-weight: bold;
+    align-items: flex-start;
+    padding-left: 1rem;
+    padding-top: 2rem;
+   
+}
+a{
+    text-decoration: none;
+    color:#fff;
+}
+.dashboard>h3{
+    font-size:x-large;
+}
+.item{
+    background-color: #fff;
+    border-left: 6px solid #facc15;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 1rem 1rem rgba(0, 0, 0, 0.03);
+
+}
+.announcement>section{
+    padding:2rem;
+}
+.banner{
+    background-color: #fff;
+    width:100%;
+    height: 25vh;
+    border:1px solid black;
+
+}
+.search-bar{
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+}
+input[type="search"]{
+    appearance: none;
+    width:50%;
+    border-radius: 25px;
+    background-color: #e2e8f0;
+    border:none;
+    height:2rem;
+}
+.icon{
+    height: 1rem;
+}
+.banner>div{
+    display: flex;
+    align-items: center;
+    gap:5px;
+    margin:2rem;
+    justify-content: space-between;
+}
+.profilepic{
+    border-radius: 50%;
+    height: 5rem;
+    margin-right: 3px;
+}
+p{
+    display: flex;
+}
+.icon:hover{
+    cursor: pointer;
+
+}
+button{
+    width:fit-content;
+    background-color: #1992d4;
+    color:#fff;
+    width:5rem;
+    height:2rem;
+    border-radius: 10px;
+    border:none;
+}
+button:hover{
+    cursor: pointer;
+}
+.profile{
+    display: flex;
+    gap:10px;
+    
+}
+
+.dashboard-icon{
+    display: flex;
+    align-items: center;
+}
+.dashboard-icon::before{
+    content: "";
+    background-image: url(view-dashboard.svg);
+    filter: invert();
+    background-repeat: no-repeat;
+    width:2rem;
+    height:2rem;
+    margin-right: 3px;
+    
+}
+.home::before{
+    background-image: url(home-account.svg);
+    width:2rem;
+    height: 2rem;
+    
+}
+.profile::before{
+    background-image: url(card-account-details-outline.svg);
+    width:2rem;
+    height: 2rem;
+    
+}
+.message::before{
+    background-image: url(card-account-details-outline.svg);
+    width:2rem;
+    height: 2rem;
+    
+}
+.history::before{
+    background-image: url(clock-outline.svg);
+    width:2rem;
+    height: 2rem;
+    
+}
+.task::before{
+    background-image: url(file-multiple.svg);
+    width:2rem;
+    height: 2rem;
+    
+}
+.comm::before{
+    background-image: url(account-group.svg);
+    width:2rem;
+    height: 2rem;
+    
+}
+.settings::before{
+    background-image: url(cog-outline.svg);
+    width:2rem;
+    height: 2rem;
+    
+}
+.support::before{
+    background-image: url(comment-question-outline.svg);
+    width:2rem;
+    height: 2rem;
+    
+}
+.priv::before{
+    background-image: url(shield-check-outline.svg);
+    width:2rem;
+    height: 2rem;
+    
+}
+.text{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(inherit,1fr));
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
